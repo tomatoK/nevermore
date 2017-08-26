@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		54A910761F5174F50045E519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A910751F5174F50045E519 /* AppDelegate.swift */; };
-		54A910781F5174F50045E519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A910771F5174F50045E519 /* ViewController.swift */; };
 		54A9107A1F5174F50045E519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A910791F5174F50045E519 /* Assets.xcassets */; };
-		54A9107D1F5174F50045E519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A9107B1F5174F50045E519 /* Main.storyboard */; };
 		54A910881F5174F60045E519 /* NevermoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A910871F5174F60045E519 /* NevermoreTests.swift */; };
 		54A910931F5174F60045E519 /* NevermoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A910921F5174F60045E519 /* NevermoreUITests.swift */; };
+		54A910A21F5177A30045E519 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A910A01F5177A30045E519 /* MainWindowController.swift */; };
+		54A910A31F5177A30045E519 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54A910A11F5177A30045E519 /* MainWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +35,7 @@
 /* Begin PBXFileReference section */
 		54A910721F5174F50045E519 /* Nevermore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nevermore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A910751F5174F50045E519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54A910771F5174F50045E519 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54A910791F5174F50045E519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		54A9107C1F5174F50045E519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54A9107E1F5174F50045E519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54A910831F5174F50045E519 /* NevermoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NevermoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A910871F5174F60045E519 /* NevermoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NevermoreTests.swift; sourceTree = "<group>"; };
@@ -45,6 +43,8 @@
 		54A9108E1F5174F60045E519 /* NevermoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NevermoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A910921F5174F60045E519 /* NevermoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NevermoreUITests.swift; sourceTree = "<group>"; };
 		54A910941F5174F60045E519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54A910A01F5177A30045E519 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		54A910A11F5177A30045E519 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				54A910751F5174F50045E519 /* AppDelegate.swift */,
-				54A910771F5174F50045E519 /* ViewController.swift */,
+				54A910A01F5177A30045E519 /* MainWindowController.swift */,
+				54A910A11F5177A30045E519 /* MainWindowController.xib */,
 				54A910791F5174F50045E519 /* Assets.xcassets */,
-				54A9107B1F5174F50045E519 /* Main.storyboard */,
 				54A9107E1F5174F50045E519 /* Info.plist */,
 			);
 			path = Nevermore;
@@ -232,8 +232,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54A910A31F5177A30045E519 /* MainWindowController.xib in Resources */,
 				54A9107A1F5174F50045E519 /* Assets.xcassets in Resources */,
-				54A9107D1F5174F50045E519 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54A910781F5174F50045E519 /* ViewController.swift in Sources */,
+				54A910A21F5177A30045E519 /* MainWindowController.swift in Sources */,
 				54A910761F5174F50045E519 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,17 +293,6 @@
 			targetProxy = 54A9108F1F5174F60045E519 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		54A9107B1F5174F50045E519 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54A9107C1F5174F50045E519 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		54A910951F5174F60045E519 /* Debug */ = {
@@ -406,6 +395,7 @@
 				DEVELOPMENT_TEAM = DZQ5YNVEU2;
 				INFOPLIST_FILE = Nevermore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.smartisan.Nevermore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -420,6 +410,7 @@
 				DEVELOPMENT_TEAM = DZQ5YNVEU2;
 				INFOPLIST_FILE = Nevermore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.smartisan.Nevermore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -507,6 +498,7 @@
 				54A910991F5174F60045E519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54A9109A1F5174F60045E519 /* Build configuration list for PBXNativeTarget "NevermoreTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +507,7 @@
 				54A9109C1F5174F60045E519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54A9109D1F5174F60045E519 /* Build configuration list for PBXNativeTarget "NevermoreUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +516,7 @@
 				54A9109F1F5174F60045E519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
