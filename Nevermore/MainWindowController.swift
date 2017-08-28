@@ -10,10 +10,18 @@ import Cocoa
 
 class MainWindowController: NSWindowController {
 
+    
+    @IBOutlet weak var button: NSButton!
+    
+    @IBAction func clickButton(_ sender: Any) {
+        
+        print("点击了按钮")
+    }
+    
     override func windowDidLoad() {
         super.windowDidLoad()
 
-        // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     }
+    
     
 }
