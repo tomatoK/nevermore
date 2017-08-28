@@ -18,6 +18,10 @@ class MainWindowController: NSWindowController {
         print("点击了按钮")
     }
     
+    override var windowNibName: String? {
+        return "MainWindowController"
+    }
+    
     override func windowDidLoad() {
         super.windowDidLoad()
 
